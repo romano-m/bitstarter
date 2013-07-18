@@ -7,7 +7,7 @@ var k = fs.writeFileSync('./index.html');
 buf = new Buffer(k);
 
 app.get('/', function(request, response) {
-  response.send(buf.toString());
+  response.send("Hello World!");
 });
 
 Var port = process.env.PORT || 5000;
